@@ -1,10 +1,9 @@
-:root{
-    --cor-fundo: #01080E ;
-    --cor-principal: #0B0D20 ;
-    --cor-secundaria: #212333; 
-    --cor-destaque: #2BDEFD;
-    --cor-texto: #D7F9FF;
-
+:root {
+    --cor-fundo: #FBE8EB;
+    --cor-principal: #F5F0F6; 
+    --cor-secundaria: #F1C6C6;
+    --cor-destaque: #D7A0A9;
+    --cor-texto: #3C3C3C;
 }
 
 body {
@@ -13,10 +12,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh; 
 }
 
-.caixa-principal{
+.caixa-principal {
     background-color: var(--cor-principal);
     width: 90%;
     max-width: 600px;
@@ -24,6 +23,6 @@ body {
     padding: 20px;
 }
 
-h1{
+h1 {
     color: var(--cor-destaque);
 }
