@@ -6,72 +6,71 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Assim que você saiu da escola e viu uma nova tecnologia de maquiagem que promete transformar seu visual instantaneamente com apenas um clique, qual é a sua reação inicial?",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "afirmação"
+                texto: "Isso é incrível e facilita muito a vida!",
+                afirmacao: "Aproveito a inovação e a tecnologia."
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "afirmação"
+                texto: "Isso parece superficial e não é confiável.",
+                afirmacao: "Prefiro técnicas tradicionais de maquiagem."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Com a introdução dessa nova tecnologia de maquiagem, uma professora de estética da sua escola decidiu fazer uma série de aulas sobre técnicas de maquiagem. No final de uma aula, ela pede que você escreva um trabalho sobre a aplicação de novas tecnologias na maquiagem. Qual abordagem você escolheria para realizar essa tarefa?",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "afirmação"
+                texto: "Usaria a tecnologia de maquiagem para experimentar diferentes looks e descrever como ela pode ser aplicada na prática.",
+                afirmacao: "Exploro a tecnologia para uma abordagem prática."
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "afirmação"
+                texto: "Faria o trabalho com base em pesquisas sobre técnicas de maquiagem tradicionais e opiniões pessoais, sem usar a tecnologia diretamente.",
+                afirmacao: "Baseio meu trabalho em métodos tradicionais e minha própria experiência."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Durante um debate em sala sobre como a tecnologia está mudando o mundo da maquiagem, qual é a sua posição sobre o impacto dessas inovações no setor de beleza?",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "afirmação"
+                texto: "Acredito que a tecnologia pode criar novas oportunidades na maquiagem e melhorar a forma como as pessoas se expressam.",
+                afirmacao: "Vejo a tecnologia como uma melhoria no setor de beleza."
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "afirmação"
+                texto: "Estou preocupado com a perda de técnicas tradicionais e a dependência excessiva da tecnologia para alcançar resultados de beleza.",
+                afirmacao: "Preocupo-me com a substituição das técnicas tradicionais pela tecnologia."
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Após a discussão, você precisa criar uma imagem que represente sua opinião sobre o uso da tecnologia na maquiagem. Qual ferramenta você escolheria para essa tarefa?",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "afirmação"
+                texto: "Usaria um software de design gráfico para criar a imagem manualmente, refletindo as minhas ideias pessoais sobre maquiagem.",
+                afirmacao: "Prefiro criar manualmente para uma expressão mais pessoal."
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "afirmação"
+                texto: "Optaria por um gerador de imagens de maquiagem baseado em tecnologia para criar a imagem automaticamente.",
+                afirmacao: "Uso a tecnologia para criar a imagem de forma rápida."
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "Você tem um projeto em grupo sobre tendências de maquiagem para entregar na próxima semana. Parte do grupo utilizou a tecnologia de maquiagem para criar o conteúdo, e o resultado é idêntico ao produzido pela ferramenta. O que você faria nessa situação?",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "afirmação"
+                texto: "Considero que usar a tecnologia para criar o conteúdo é uma contribuição válida e não vejo necessidade de alterações.",
+                afirmacao: "A tecnologia é uma ferramenta válida para o projeto."
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "afirmação"
+                texto: "Embora a tecnologia seja útil, é importante revisar e personalizar o trabalho para refletir a perspectiva do grupo e garantir a autenticidade.",
+                afirmacao: "A personalização e revisão são essenciais para garantir um trabalho único."
             }
         ]
     },
 ];
-
 
 let atual = 0;
 let perguntaAtual;
@@ -105,7 +104,7 @@ function respostaSelecionada(opcaoSelecionada) {
 }
 
 function mostraResultado() {
-    caixaPerguntas.textContent = "Em 2049...";
+    caixaPerguntas.textContent = "Como a tecnologia influenciará o futuro da maquiagem?";
     textoResultado.textContent = historiaFinal;
     caixaAlternativas.textContent = "";
 }
